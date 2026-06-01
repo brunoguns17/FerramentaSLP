@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EngTool - Ferramenta Avançada para Engenharia Civil</title>
-    <!-- Tailwind CSS v4 para um design moderno e de altíssima qualidade -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Biblioteca de Ícones FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
@@ -14,7 +12,6 @@
 </head>
 <body class="bg-slate-50 font-sans text-slate-800 antialiased">
 
-    <!-- NAV BAR / CABEÇALHO -->
     <nav class="bg-white/80 backdrop-blur-md shadow-xs sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2 font-bold text-xl text-blue-600">
@@ -27,7 +24,6 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION (Dobra Principal) -->
     <header class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
         <div>
             <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-100">
@@ -50,14 +46,11 @@
             </div>
         </div>
         
-        <!-- Tela de Demonstração / Visual do Software (Com clique para expandir) -->
         <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-200/60">
-            <!-- 📷 Mude 'print_software.png' para o nome real e extensão da sua imagem se necessário -->
             <img src="Captura de tela 2026-05-20 164019.png" alt="Interface do Software EngTool" onclick="expandirImagem(this)" class="w-full rounded-xl object-cover aspect-video border border-slate-100 block cursor-zoom-in hover:opacity-95 transition-all">
         </div>
     </header>
 
-    <!-- SEÇÃO DE RECURSOS / DIFERENCIAIS -->
     <section id="recursos" class="bg-white border-y border-slate-200/60 py-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-16">
@@ -66,7 +59,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-gauge-high"></i>
@@ -74,7 +66,6 @@
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Sem Travamentos</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Por ser um executável compilado nativamente, processa grandes volumes de dados de engenharia sem lentidão.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-file-shield"></i>
@@ -82,7 +73,6 @@
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Conformidade Técnico-Normativa</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Estrutura lógica desenvolvida em total conformidade com os critérios normativos e fórmulas técnicas oficiais.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-circle-check"></i>
@@ -94,7 +84,6 @@
         </div>
     </section>
 
-    <!-- SEÇÃO CENTRAL DE DOWNLOAD DIRETO -->
     <section id="download" class="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(#1e3a8a_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
@@ -108,8 +97,8 @@
                 </h3>
                 <p class="text-xs text-slate-400 mb-6">Versão de Lançamento Oficial</p>
                 
-                <a href="FerramentaSLP/app.exe" download="ferramenta_engenharia.exe" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
-                    <i class="fa-solid fa-file-arrow-down mr-2 animate-bounce"></i> Baixar Executável (.exe)
+                <a href="FerramentaSLP/app.rar" download="ferramenta_engenharia.zip" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
+                    <i class="fa-solid fa-file-arrow-down mr-2 animate-bounce"></i> Baixar Utilitário (.zip)
                 </a>
                 
                 <p class="text-xs text-slate-500">Compatível nativamente com Windows 10 e Windows 11.</p>
@@ -125,7 +114,6 @@
         </div>
     </section>
 
-    <!-- SEÇÃO: CONTATO / FEEDBACK -->
     <section id="contato" class="max-w-4xl mx-auto px-4 py-20">
         <div class="text-center max-w-2xl mx-auto mb-12">
             <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Fale com o Desenvolvedor</h2>
@@ -133,23 +121,19 @@
         </div>
 
         <div class="grid md:grid-cols-5 gap-8 items-start">
-            <!-- Coluna 1: Opção Rápida (mailto) -->
             <div class="md:col-span-2 bg-blue-50 border border-blue-100 rounded-2xl p-6">
                 <h3 class="text-base font-bold text-slate-900 mb-2">Contato Direto</h3>
                 <p class="text-xs text-slate-600 mb-6 leading-relaxed">Se preferir usar seu próprio aplicativo de e-mail (Outlook, Gmail, Mail do iPhone), clique no botão abaixo:</p>
                 
-                <!-- ✉️ AJUSTE AQUI: Mude para o seu e-mail real -->
                 <a href="mailto:seu-email@dominio.com?subject=Feedback%20Ferramenta%20EngTool" class="w-full inline-flex items-center justify-center space-x-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl text-xs transition-all shadow-xs">
                     <i class="fa-solid fa-envelope text-blue-600 text-sm"></i>
                     <span>Enviar E-mail Direto</span>
                 </a>
             </div>
 
-            <!-- Coluna 2: Formulário Integrado -->
             <div class="md:col-span-3 bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs">
                 <h3 class="text-base font-bold text-slate-900 mb-4">Enviar Mensagem pelo Site</h3>
                 
-                <!-- 🛠️ COMO ATIVAR O FORMULÁRIO: Substitua o 'SEU_ID_DO_FORMSPREE' abaixo pelo seu ID do Formspree -->
                 <form class="space-y-4 text-xs">
                     <div>
                         <label class="block text-slate-700 font-medium mb-1">Seu Nome</label>
@@ -171,7 +155,6 @@
         </div>
     </section>
 
-    <!-- SOBRE O DESENVOLVEDOR -->
     <section class="max-w-4xl mx-auto px-4 py-10 text-center border-t border-slate-200/60">
         <div class="inline-flex bg-blue-50 text-blue-600 border border-blue-100 w-16 h-16 rounded-full mb-4 items-center justify-center shadow-xs">
             <i class="fa-solid fa-laptop-code text-2xl"></i>
@@ -182,7 +165,6 @@
         </p>
     </section>
 
-    <!-- RODAPÉ (FOOTER) -->
     <footer class="bg-slate-950 text-slate-500 text-xs py-10 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
             <p>&copy; 2026 EngTool. Todos os direitos reservados.</p>
@@ -192,7 +174,6 @@
         </div>
     </footer>
 
-    <!-- MODAL PARA EXPANDIR A IMAGEM (LIGHTBOX) -->
     <div id="modalImagem" onclick="fecharImagem()" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 md:p-12 cursor-zoom-out transition-all duration-300">
         <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
             <button class="absolute -top-10 right-0 text-white text-3xl hover:text-slate-300 cursor-pointer" onclick="fecharImagem()">&times;</button>
@@ -200,7 +181,6 @@
         </div>
     </div>
 
-    <!-- VÍNCULO COM O ARQUIVO JAVASCRIPT EXTERNO -->
     <script src="script.js"></script>
 
 </body>
