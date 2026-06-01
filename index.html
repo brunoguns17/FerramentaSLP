@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngTool - Ferramenta Avançada para Engenharia Civil</title>
+    <!-- Tailwind CSS v4 para um design moderno e de altíssima qualidade -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Biblioteca de Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+    <!-- NAV BAR / CABEÇALHO -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-xs sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2 font-bold text-xl text-blue-600">
+                <i class="fa-solid fa-compass-drafting text-2xl"></i>
+                <span>EngTool</span>
+            </div>
+            <div>
+                <a href="#contato" class="text-slate-600 hover:text-blue-600 font-medium text-sm transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Dobra Principal) -->
+    <header class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-100">
+                Software Independente (.exe)
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4 leading-tight tracking-tight">
+                Potencialize a precisão e velocidade dos seus cálculos.
+            </h1>
+            <p class="text-lg text-slate-600 mt-6 leading-relaxed">
+                Esqueça planilhas travadas ou processos manuais demorados. Uma ferramenta intuitiva projetada sob medida para resolver os desafios do dia a dia da Engenharia Civil.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white text-center px-8 py-4 rounded-xl font-bold shadow-lg shadow-blue-500/20 transition-all text-lg flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Ir para o Download</span>
+                </a>
+                <a href="#recursos" class="border border-slate-300 hover:bg-slate-100 bg-white text-slate-700 text-center px-6 py-4 rounded-xl font-semibold transition-all flex items-center justify-center">
+                    Ver recursos do sistema
+                </a>
+            </div>
+        </div>
+        
+        <!-- Tela de Demonstração / Visual do Software (Com clique para expandir) -->
+        <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-200/60">
+            <!-- 📷 Mude 'print_software.png' para o nome real e extensão da sua imagem se necessário -->
+            <img src="Captura de tela 2026-05-20 164019.png" alt="Interface do Software EngTool" onclick="expandirImagem(this)" class="w-full rounded-xl object-cover aspect-video border border-slate-100 block cursor-zoom-in hover:opacity-95 transition-all">
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE RECURSOS / DIFERENCIAIS -->
+    <section id="recursos" class="bg-white border-y border-slate-200/60 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">O que a ferramenta oferece?</h2>
+                <p class="text-slate-600 mt-4 text-base">Uma aplicação desktop leve, veloz e focada na automação dos seus processos de engenharia.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Sem Travamentos</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Por ser um executável compilado nativamente, processa grandes volumes de dados de engenharia sem lentidão.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Conformidade Técnico-Normativa</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Estrutura lógica desenvolvida em total conformidade com os critérios normativos e fórmulas técnicas oficiais.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pronto para Uso</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Portátil e direto ao ponto. Não precisa de instalações complexas, dependências externas ou configurações avançadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CENTRAL DE DOWNLOAD DIRETO -->
+    <section id="download" class="bg-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#1e3a8a_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Baixe agora mesmo o seu utilitário</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base">O clique no botão abaixo iniciará o download direto do executável a partir do nosso servidor de arquivos.</p>
+            
+            <div class="bg-slate-800 p-8 rounded-3xl max-w-md mx-auto border border-slate-700 shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-box-open text-blue-400"></i>
+                    <span>Área de Download</span>
+                </h3>
+                <p class="text-xs text-slate-400 mb-6">Versão de Lançamento Oficial</p>
+                
+                <a href="FerramentaSLP/app.exe" download="ferramenta_engenharia.exe" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
+                    <i class="fa-solid fa-file-arrow-down mr-2 animate-bounce"></i> Baixar Executável (.exe)
+                </a>
+                
+                <p class="text-xs text-slate-500">Compatível nativamente com Windows 10 e Windows 11.</p>
+            </div>
+
+            <div class="max-w-md mx-auto mt-8 bg-amber-950/40 border border-amber-500/30 rounded-2xl p-4 text-left flex items-start space-x-3">
+                <i class="fa-solid fa-shield-cat text-amber-400 text-xl mt-0.5 flex-shrink-0"></i>
+                <div class="text-xs text-amber-200/90 leading-relaxed">
+                    <span class="font-bold text-amber-300 block mb-1">Nota de Segurança Importante:</span>
+                    Como este é um software independente recém-compilado, navegadores (Chrome/Edge) ou o Windows SmartScreen podem exibir um alerta de segurança antes de baixar ou executar. O programa é <strong>totalmente limpo e seguro</strong>. Se o aviso aparecer, basta selecionar as opções para "Manter arquivo" e "Executar assim mesmo".
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: CONTATO / FEEDBACK -->
+    <section id="contato" class="max-w-4xl mx-auto px-4 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Fale com o Desenvolvedor</h2>
+            <p class="text-slate-600 mt-3 text-sm">Encontrou algum bug, tem sugestões de melhorias ou quer tirar dúvidas técnicas? Envie uma mensagem diretamente.</p>
+        </div>
+
+        <div class="grid md:grid-cols-5 gap-8 items-start">
+            <!-- Coluna 1: Opção Rápida (mailto) -->
+            <div class="md:col-span-2 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+                <h3 class="text-base font-bold text-slate-900 mb-2">Contato Direto</h3>
+                <p class="text-xs text-slate-600 mb-6 leading-relaxed">Se preferir usar seu próprio aplicativo de e-mail (Outlook, Gmail, Mail do iPhone), clique no botão abaixo:</p>
+                
+                <!-- ✉️ AJUSTE AQUI: Mude para o seu e-mail real -->
+                <a href="mailto:seu-email@dominio.com?subject=Feedback%20Ferramenta%20EngTool" class="w-full inline-flex items-center justify-center space-x-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl text-xs transition-all shadow-xs">
+                    <i class="fa-solid fa-envelope text-blue-600 text-sm"></i>
+                    <span>Enviar E-mail Direto</span>
+                </a>
+            </div>
+
+            <!-- Coluna 2: Formulário Integrado -->
+            <div class="md:col-span-3 bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs">
+                <h3 class="text-base font-bold text-slate-900 mb-4">Enviar Mensagem pelo Site</h3>
+                
+                <!-- 🛠️ COMO ATIVAR O FORMULÁRIO: Substitua o 'SEU_ID_DO_FORMSPREE' abaixo pelo seu ID do Formspree -->
+                <form class="space-y-4 text-xs">
+                    <div>
+                        <label class="block text-slate-700 font-medium mb-1">Seu Nome</label>
+                        <input type="text" name="name" required placeholder="Ex: Eng. João Silva" class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 font-medium mb-1">Seu E-mail</label>
+                        <input type="email" name="email" required placeholder="joao@empresa.com" class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 font-medium mb-1">Mensagem ou Feedback</label>
+                        <textarea name="message" rows="4" required placeholder="Digite sua dúvida, sugestão ou relatório de erro aqui..." class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50 resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition-all shadow-sm cursor-pointer">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE O DESENVOLVEDOR -->
+    <section class="max-w-4xl mx-auto px-4 py-10 text-center border-t border-slate-200/60">
+        <div class="inline-flex bg-blue-50 text-blue-600 border border-blue-100 w-16 h-16 rounded-full mb-4 items-center justify-center shadow-xs">
+            <i class="fa-solid fa-laptop-code text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Sobre o Projeto</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-3 text-sm leading-relaxed">
+            Uma iniciativa técnica focada no compartilhamento de ferramentas automatizadas para a otimização de rotinas de cálculo, modelagem e análise dentro do ecossistema da Engenharia Civil.
+        </p>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="bg-slate-950 text-slate-500 text-xs py-10 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
+            <p>&copy; 2026 EngTool. Todos os direitos reservados.</p>
+            <p class="max-w-2xl mx-auto text-[11px] text-slate-600 leading-normal">
+                <strong>Isenção de Responsabilidade:</strong> Este software é disponibilizado como uma ferramenta de apoio analítico. A validação final dos cálculos, a emissão de relatórios e a responsabilidade técnica legal sobre quaisquer projetos e obras são exclusivas do engenheiro responsável habilitado pelo CREA.
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODAL PARA EXPANDIR A IMAGEM (LIGHTBOX) -->
+    <div id="modalImagem" onclick="fecharImagem()" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 md:p-12 cursor-zoom-out transition-all duration-300">
+        <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
+            <button class="absolute -top-10 right-0 text-white text-3xl hover:text-slate-300 cursor-pointer" onclick="fecharImagem()">&times;</button>
+            <img id="imagemExpandida" src="" alt="Visualização expandida" class="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl border border-white/10">
+        </div>
+    </div>
+
+    <!-- VÍNCULO COM O ARQUIVO JAVASCRIPT EXTERNO -->
+    <script src="script.js"></script>
+
+</body>
+</html>
