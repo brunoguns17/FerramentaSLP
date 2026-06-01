@@ -19,8 +19,8 @@
     <nav class="bg-white/80 backdrop-blur-md shadow-xs sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             
-            <a href="#" class="flex items-center gap-4 group">
-                <svg class="w-14 h-14 shrink-0 transition-transform group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="flex items-center gap-4">
+                <svg class="w-14 h-14 shrink-0 scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 55 C 5 80, 40 95, 80 85" stroke="#155DFC" stroke-width="4" stroke-linecap="round" fill="none"/>
                     <path d="M25 75 A 12 12 0 1 1 25 51 A 12 12 0 0 1 25 75 Z" fill="#0B1B3D"/>
                     <path d="M25 80 L22 75 L28 75 Z M15 70 L19 66 L15 62 Z M15 56 L19 60 L15 64 Z M35 70 L31 66 L35 62 Z M35 56 L31 60 L35 64 Z M25 46 L22 51 L28 51 Z" fill="#0B1B3D"/>
@@ -165,7 +165,7 @@
                 </h3>
                 <p class="text-xs text-slate-400 mb-6">Versão de Lançamento Oficial</p>
 
-                <a href="FerramentaSLP/SmartSLP.rar" download="ferramenta_engenharia.rar"
+                <a href="FerramentaSLP/SmartSLP.rar" download="SmartSLP.rar"
                     class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
                     <i class="fa-solid fa-file-arrow-down mr-2 animate-bounce"></i> Baixar Utilitário (.rar)
                 </a>
@@ -293,66 +293,6 @@
         </div>
     </div>
 
-    <script>
-        // Lógica do Carrossel
-        let slideAtual = 0;
-        
-        function atualizarCarrossel() {
-            const track = document.getElementById('carrossel-track');
-            const indicadores = document.getElementById('carrossel-indicadores').children;
-            
-            if (!track || !indicadores) return;
-
-            track.style.transform = `translateX(-${slideAtual * 100}%)`;
-            
-            for (let i = 0; i < indicadores.length; i++) {
-                if (i === slideAtual) {
-                    indicadores[i].className = "w-4 h-2.5 rounded-full bg-[#155DFC] transition-all cursor-pointer shadow-sm";
-                } else {
-                    indicadores[i].className = "w-2.5 h-2.5 rounded-full bg-white/80 hover:bg-white transition-all cursor-pointer shadow-sm";
-                }
-            }
-        }
-
-        function moverCarrossel(direcao) {
-            const track = document.getElementById('carrossel-track');
-            if (!track) return;
-            
-            const totalSlides = track.children.length;
-            slideAtual += direcao;
-            
-            if (slideAtual >= totalSlides) slideAtual = 0;
-            if (slideAtual < 0) slideAtual = totalSlides - 1;
-            
-            atualizarCarrossel();
-        }
-
-        function irParaSlide(index) {
-            slideAtual = index;
-            atualizarCarrossel();
-        }
-
-        // Timer para transição automática do carrossel
-        setInterval(() => {
-            moverCarrossel(1);
-        }, 5000);
-
-        // Lógica do Modal de Imagem Expandida
-        function expandirImagem(imgElement) {
-            const modal = document.getElementById('modalImagem');
-            const imagemExpandida = document.getElementById('imagemExpandida');
-            if(modal && imagemExpandida) {
-                imagemExpandida.src = imgElement.src;
-                modal.classList.remove('hidden');
-            }
-        }
-
-        function fecharImagem() {
-            const modal = document.getElementById('modalImagem');
-            if(modal) {
-                modal.classList.add('hidden');
-            }
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
