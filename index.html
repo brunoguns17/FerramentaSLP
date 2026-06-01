@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngTool - Ferramenta Avançada para Engenharia Civil</title>
+    <title>SmartSLP - Ferramenta Avançada para Engenharia</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body class="bg-slate-50 font-sans text-slate-800 antialiased">
 
     <nav class="bg-white/80 backdrop-blur-md shadow-xs sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2 font-bold text-xl text-blue-600">
-                <i class="fa-solid fa-compass-drafting text-2xl"></i>
-                <span>EngTool</span>
-            </div>
+            
+            <a href="#" class="flex items-center gap-4 group">
+                <svg class="w-14 h-14 shrink-0 transition-transform group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 55 C 5 80, 40 95, 80 85" stroke="#155DFC" stroke-width="4" stroke-linecap="round" fill="none"/>
+                    <path d="M25 75 A 12 12 0 1 1 25 51 A 12 12 0 0 1 25 75 Z" fill="#0B1B3D"/>
+                    <path d="M25 80 L22 75 L28 75 Z M15 70 L19 66 L15 62 Z M15 56 L19 60 L15 64 Z M35 70 L31 66 L35 62 Z M35 56 L31 60 L35 64 Z M25 46 L22 51 L28 51 Z" fill="#0B1B3D"/>
+                    <circle cx="25" cy="63" r="4" fill="white"/>
+                    <path d="M25 45 V 25 H 45 V 30 H 65 V 50 H 55 V 65 H 35" stroke="#0B1B3D" stroke-width="3" stroke-linecap="square" fill="none"/>
+                    <path d="M65 50 H 75 V 65 H 55" stroke="#0B1B3D" stroke-width="3" fill="none"/>
+                    <line x1="25" y1="45" x2="10" y2="45" stroke="#0B1B3D" stroke-width="3" />
+                    <rect x="29" y="30" width="14" height="12" fill="#155DFC" rx="1"/>
+                    <rect x="52" y="35" width="10" height="9" fill="#18A987" rx="1"/>
+                    <rect x="42" y="52" width="10" height="8" fill="#F58D00" rx="1"/>
+                    <rect x="30" y="54" width="6" height="6" fill="#A0AAB5" rx="1"/>
+                    <path d="M48 35 V 45 H 38 V 50" stroke="#0B1B3D" stroke-width="2" stroke-dasharray="2 2" fill="none"/>
+                </svg>
+                <div class="flex flex-col pt-0.5">
+                    <div class="text-[26px] font-bold leading-none tracking-tight">
+                        <span class="text-[#0B1B3D]">Smart</span><span class="text-[#155DFC]">SLP</span>
+                    </div>
+                    <div class="flex items-center my-[3px]">
+                        <div class="h-[1.5px] bg-[#155DFC] flex-grow"></div>
+                        <div class="w-[4.5px] h-[4.5px] bg-[#155DFC] rounded-full ml-[-1px]"></div>
+                    </div>
+                    <div class="text-[7.5px] font-semibold text-[#0B1B3D] tracking-[0.25em] whitespace-nowrap">
+                        PLANEJE &bull; OTIMIZE &bull; TRANSFORME
+                    </div>
+                </div>
+            </a>
+
             <div>
                 <a href="#contato" class="text-slate-600 hover:text-blue-600 font-medium text-sm transition">Contato</a>
             </div>
@@ -30,32 +60,65 @@
                 Software Independente (.exe)
             </span>
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4 leading-tight tracking-tight">
-                Potencialize a precisão e velocidade dos seus cálculos.
+                Otimize a criação de layouts SLP com mais precisão e rapidez.
             </h1>
             <p class="text-lg text-slate-600 mt-6 leading-relaxed">
-                Esqueça planilhas travadas ou processos manuais demorados. Uma ferramenta intuitiva projetada sob medida para resolver os desafios do dia a dia da Engenharia Civil.
+                Organize elementos, defina restrições de proximidade e gere layouts mais eficientes para projetos
+                industriais e de engenharia de forma prática e visual.
             </p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white text-center px-8 py-4 rounded-xl font-bold shadow-lg shadow-blue-500/20 transition-all text-lg flex items-center justify-center space-x-3">
+                <a href="#download"
+                    class="bg-blue-600 hover:bg-blue-700 text-white text-center px-8 py-4 rounded-xl font-bold shadow-lg shadow-blue-500/20 transition-all text-lg flex items-center justify-center space-x-3">
                     <i class="fa-solid fa-download"></i>
-                    <span>Ir para o Download</span>
+                    <span>Baixar o Software</span>
                 </a>
-                <a href="#recursos" class="border border-slate-300 hover:bg-slate-100 bg-white text-slate-700 text-center px-6 py-4 rounded-xl font-semibold transition-all flex items-center justify-center">
-                    Ver recursos do sistema
+                <a href="#recursos"
+                    class="border border-slate-300 hover:bg-slate-100 bg-white text-slate-700 text-center px-6 py-4 rounded-xl font-semibold transition-all flex items-center justify-center">
+                    Ver Funcionalidades
                 </a>
             </div>
         </div>
-        
-        <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-200/60">
-            <img src="/assets/software.png" alt="Interface do Software EngTool" onclick="expandirImagem(this)" class="w-full rounded-xl object-cover aspect-video border border-slate-100 block cursor-zoom-in hover:opacity-95 transition-all">
+
+        <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-200/60 relative group" id="carrossel-container">
+            <div class="overflow-hidden rounded-xl relative border border-slate-100">
+                
+                <div class="flex transition-transform duration-500 ease-out" id="carrossel-track">
+                    <div class="min-w-full">
+                        <img src="/assets/imagemConstrucao.png" alt="Tela Principal do SmartSLP" onclick="expandirImagem(this)"
+                            class="w-full object-cover aspect-video block cursor-zoom-in hover:opacity-95 transition-opacity">
+                    </div>
+                    <div class="min-w-full">
+                        <img src="/assets/image1-4.png" alt="Diagrama de Proximidade" onclick="expandirImagem(this)"
+                            class="w-full object-cover aspect-video block cursor-zoom-in hover:opacity-95 transition-opacity bg-slate-100">
+                    </div>
+                    <div class="min-w-full">
+                        <img src="/assets/software.png" alt="Tela de Otimização" onclick="expandirImagem(this)"
+                            class="w-full object-cover aspect-video block cursor-zoom-in hover:opacity-95 transition-opacity bg-slate-200">
+                    </div>
+                </div>
+
+                <button onclick="moverCarrossel(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 text-slate-800 hover:text-[#155DFC] hover:bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all cursor-pointer">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="moverCarrossel(1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 text-slate-800 hover:text-[#155DFC] hover:bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all cursor-pointer">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2" id="carrossel-indicadores">
+                    <button onclick="irParaSlide(0)" class="w-4 h-2.5 rounded-full bg-[#155DFC] transition-all cursor-pointer shadow-sm"></button>
+                    <button onclick="irParaSlide(1)" class="w-2.5 h-2.5 rounded-full bg-white/80 hover:bg-white transition-all cursor-pointer shadow-sm"></button>
+                    <button onclick="irParaSlide(2)" class="w-2.5 h-2.5 rounded-full bg-white/80 hover:bg-white transition-all cursor-pointer shadow-sm"></button>
+                </div>
+            </div>
         </div>
     </header>
 
     <section id="recursos" class="bg-white border-y border-slate-200/60 py-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">O que a ferramenta oferece?</h2>
-                <p class="text-slate-600 mt-4 text-base">Uma aplicação desktop leve, veloz e focada na automação dos seus processos de engenharia.</p>
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">O que o SmartSLP oferece?</h2>
+                <p class="text-slate-600 mt-4 text-base">Uma aplicação desktop focada em modelagem, análise de
+                    restrições e otimização de layout com base no método SLP.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -63,45 +126,50 @@
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-gauge-high"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Sem Travamentos</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Por ser um executável compilado nativamente, processa grandes volumes de dados de engenharia sem lentidão.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cadastro de Elementos</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Registre máquinas, setores ou áreas com dimensões
+                        reais para compor o projeto com base nos seus dados.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-file-shield"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Conformidade Técnico-Normativa</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Estrutura lógica desenvolvida em total conformidade com os critérios normativos e fórmulas técnicas oficiais.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Diagrama de Proximidade SLP</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Defina relações entre elementos e visualize as
+                        restrições técnicas que orientam a organização do layout.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/50 hover:border-blue-200 transition-all">
                     <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/10">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pronto para Uso</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">Portátil e direto ao ponto. Não precisa de instalações complexas, dependências externas ou configurações avançadas.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Otimização Automática</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Gere alternativas de arranjo para o canteiro ou
+                        galpão e compare opções com base no custo de eficiência.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="download" class="bg-slate-900 text-white py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(#1e3a8a_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(#1e3a8a_1px,transparent_1px)] [background-size:16px_16px] opacity-20">
+        </div>
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Baixe agora mesmo o seu utilitário</h2>
-            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base">O clique no botão abaixo iniciará o download direto do executável a partir do nosso servidor de arquivos.</p>
-            
+            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base">O clique no botão abaixo iniciará o download
+                direto do executável a partir do nosso servidor de arquivos.</p>
+
             <div class="bg-slate-800 p-8 rounded-3xl max-w-md mx-auto border border-slate-700 shadow-2xl">
                 <h3 class="text-xl font-bold mb-2 flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-box-open text-blue-400"></i>
                     <span>Área de Download</span>
                 </h3>
                 <p class="text-xs text-slate-400 mb-6">Versão de Lançamento Oficial</p>
-                
-                <!-- Link alterado para buscar o app.rar na pasta FerramentaSLP -->
-                <a href="FerramentaSLP/app.rar" download="ferramenta_engenharia.rar" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
+
+                <a href="FerramentaSLP/SmartSLP.rar" download="ferramenta_engenharia.rar"
+                    class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30 mb-4 text-center">
                     <i class="fa-solid fa-file-arrow-down mr-2 animate-bounce"></i> Baixar Utilitário (.rar)
                 </a>
-                
+
                 <p class="text-xs text-slate-500">Compatível nativamente com Windows 10 e Windows 11.</p>
             </div>
 
@@ -109,7 +177,10 @@
                 <i class="fa-solid fa-shield-cat text-amber-400 text-xl mt-0.5 flex-shrink-0"></i>
                 <div class="text-xs text-amber-200/90 leading-relaxed">
                     <span class="font-bold text-amber-300 block mb-1">Nota de Segurança Importante:</span>
-                    Como este é um software independente recém-compilado, navegadores (Chrome/Edge) ou o Windows SmartScreen podem exibir um alerta de segurança antes de baixar ou executar. O programa é <strong>totalmente limpo e seguro</strong>. Se o aviso aparecer, basta selecionar as opções para "Manter arquivo" e "Executar assim mesmo".
+                    Como este é um software independente recém-compilado, navegadores (Chrome/Edge) ou o Windows
+                    SmartScreen podem exibir um alerta de segurança antes de baixar ou executar. O programa é
+                    <strong>totalmente limpo e seguro</strong>. Se o aviso aparecer, basta selecionar as opções para
+                    "Manter arquivo" e "Executar assim mesmo".
                 </div>
             </div>
         </div>
@@ -118,15 +189,18 @@
     <section id="contato" class="max-w-4xl mx-auto px-4 py-20">
         <div class="text-center max-w-2xl mx-auto mb-12">
             <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Fale com o Desenvolvedor</h2>
-            <p class="text-slate-600 mt-3 text-sm">Encontrou algum bug, tem sugestões de melhorias ou quer tirar dúvidas técnicas? Envie uma mensagem diretamente.</p>
+            <p class="text-slate-600 mt-3 text-sm">Encontrou algum bug, tem sugestões de melhorias ou quer tirar dúvidas
+                técnicas? Envie uma mensagem diretamente.</p>
         </div>
 
         <div class="grid md:grid-cols-5 gap-8 items-start">
             <div class="md:col-span-2 bg-blue-50 border border-blue-100 rounded-2xl p-6">
                 <h3 class="text-base font-bold text-slate-900 mb-2">Contato Direto</h3>
-                <p class="text-xs text-slate-600 mb-6 leading-relaxed">Se preferir usar seu próprio aplicativo de e-mail (Outlook, Gmail, Mail do iPhone), clique no botão abaixo:</p>
-                
-                <a href="mailto:seu-email@dominio.com?subject=Feedback%20Ferramenta%20EngTool" class="w-full inline-flex items-center justify-center space-x-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl text-xs transition-all shadow-xs">
+                <p class="text-xs text-slate-600 mb-6 leading-relaxed">Se preferir usar seu próprio aplicativo de e-mail
+                    (Outlook, Gmail, Mail do iPhone), clique no botão abaixo:</p>
+
+                <a href="mailto:seu-email@dominio.com?subject=Feedback%20Ferramenta%20SmartSLP"
+                    class="w-full inline-flex items-center justify-center space-x-2 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-semibold py-3 px-4 rounded-xl text-xs transition-all shadow-xs">
                     <i class="fa-solid fa-envelope text-blue-600 text-sm"></i>
                     <span>Enviar E-mail Direto</span>
                 </a>
@@ -134,21 +208,26 @@
 
             <div class="md:col-span-3 bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs">
                 <h3 class="text-base font-bold text-slate-900 mb-4">Enviar Mensagem pelo Site</h3>
-                
+
                 <form class="space-y-4 text-xs">
                     <div>
                         <label class="block text-slate-700 font-medium mb-1">Seu Nome</label>
-                        <input type="text" name="name" required placeholder="Ex: Eng. João Silva" class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
+                        <input type="text" name="name" required placeholder="Ex: Eng. João Silva"
+                            class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
                     </div>
                     <div>
                         <label class="block text-slate-700 font-medium mb-1">Seu E-mail</label>
-                        <input type="email" name="email" required placeholder="joao@empresa.com" class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
+                        <input type="email" name="email" required placeholder="joao@empresa.com"
+                            class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50">
                     </div>
                     <div>
                         <label class="block text-slate-700 font-medium mb-1">Mensagem ou Feedback</label>
-                        <textarea name="message" rows="4" required placeholder="Digite sua dúvida, sugestão ou relatório de erro aqui..." class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50 resize-none"></textarea>
+                        <textarea name="message" rows="4" required
+                            placeholder="Digite sua dúvida, sugestão ou relatório de erro aqui..."
+                            class="w-full border border-slate-300 rounded-lg p-2.5 focus:border-blue-500 focus:outline-none bg-slate-50/50 resize-none"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition-all shadow-sm cursor-pointer">
+                    <button type="submit"
+                        class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition-all shadow-sm cursor-pointer">
                         Enviar Mensagem
                     </button>
                 </form>
@@ -162,27 +241,118 @@
         </div>
         <h3 class="text-xl font-bold text-slate-900">Sobre o Projeto</h3>
         <p class="text-slate-600 max-w-xl mx-auto mt-3 text-sm leading-relaxed">
-            Uma iniciativa técnica focada no compartilhamento de ferramentas automatizadas para a otimização de rotinas de cálculo, modelagem e análise dentro do ecossistema da Engenharia Civil.
+            Plataforma desktop voltada para o desenvolvimento de layouts industriais baseada na metodologia SLP. Permite
+            modelagem de elementos, definição de restrições de proximidade, geração de diagramas relacionais e
+            otimização automática de arranjos físicos.
         </p>
     </section>
 
     <footer class="bg-slate-950 text-slate-500 text-xs py-10 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
-            <p>&copy; 2026 EngTool. Todos os direitos reservados.</p>
+            
+            <div class="flex justify-center mb-6">
+                <div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <svg class="w-10 h-10 shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 55 C 5 80, 40 95, 80 85" stroke="#155DFC" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M25 75 A 12 12 0 1 1 25 51 A 12 12 0 0 1 25 75 Z" fill="#0B1B3D"/>
+                        <path d="M25 80 L22 75 L28 75 Z M15 70 L19 66 L15 62 Z M15 56 L19 60 L15 64 Z M35 70 L31 66 L35 62 Z M35 56 L31 60 L35 64 Z M25 46 L22 51 L28 51 Z" fill="#0B1B3D"/>
+                        <circle cx="25" cy="63" r="4" fill="white"/>
+                        <path d="M25 45 V 25 H 45 V 30 H 65 V 50 H 55 V 65 H 35" stroke="#0B1B3D" stroke-width="3" stroke-linecap="square" fill="none"/>
+                        <path d="M65 50 H 75 V 65 H 55" stroke="#0B1B3D" stroke-width="3" fill="none"/>
+                        <line x1="25" y1="45" x2="10" y2="45" stroke="#0B1B3D" stroke-width="3" />
+                        <rect x="29" y="30" width="14" height="12" fill="#155DFC" rx="1"/>
+                        <rect x="52" y="35" width="10" height="9" fill="#18A987" rx="1"/>
+                        <rect x="42" y="52" width="10" height="8" fill="#F58D00" rx="1"/>
+                        <rect x="30" y="54" width="6" height="6" fill="#A0AAB5" rx="1"/>
+                        <path d="M48 35 V 45 H 38 V 50" stroke="#0B1B3D" stroke-width="2" stroke-dasharray="2 2" fill="none"/>
+                    </svg>
+                    <div class="flex flex-col pt-1 text-left">
+                        <div class="text-[20px] font-bold leading-none tracking-tight">
+                            <span class="text-slate-400">Smart</span><span class="text-slate-300">SLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>&copy; 2026 SmartSLP. Todos os direitos reservados.</p>
             <p class="max-w-2xl mx-auto text-[11px] text-slate-600 leading-normal">
-                <strong>Isenção de Responsabilidade:</strong> Este software é disponibilizado como uma ferramenta de apoio analítico. A validação final dos cálculos, a emissão de relatórios e a responsabilidade técnica legal sobre quaisquer projects e obras são exclusivas do engenheiro responsável habilitado pelo CREA.
+                <strong>Isenção de Responsabilidade:</strong> Este software é disponibilizado como uma ferramenta de
+                apoio analítico. A validação final dos cálculos, a emissão de relatórios e a responsabilidade técnica
+                legal sobre quaisquer projetos e obras são exclusivas do engenheiro responsável habilitado pelo CREA.
             </p>
         </div>
     </footer>
 
-    <div id="modalImagem" onclick="fecharImagem()" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 md:p-12 cursor-zoom-out transition-all duration-300">
+    <div id="modalImagem" onclick="fecharImagem()"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 md:p-12 cursor-zoom-out transition-all duration-300">
         <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
-            <button class="absolute -top-10 right-0 text-white text-3xl hover:text-slate-300 cursor-pointer" onclick="fecharImagem()">&times;</button>
-            <img id="imagemExpandida" src="" alt="Visualização expandida" class="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl border border-white/10">
+            <button class="absolute -top-10 right-0 text-white text-3xl hover:text-slate-300 cursor-pointer"
+                onclick="fecharImagem()">&times;</button>
+            <img id="imagemExpandida" src="" alt="Visualização expandida"
+                class="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl border border-white/10">
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Lógica do Carrossel
+        let slideAtual = 0;
+        
+        function atualizarCarrossel() {
+            const track = document.getElementById('carrossel-track');
+            const indicadores = document.getElementById('carrossel-indicadores').children;
+            
+            if (!track || !indicadores) return;
 
+            track.style.transform = `translateX(-${slideAtual * 100}%)`;
+            
+            for (let i = 0; i < indicadores.length; i++) {
+                if (i === slideAtual) {
+                    indicadores[i].className = "w-4 h-2.5 rounded-full bg-[#155DFC] transition-all cursor-pointer shadow-sm";
+                } else {
+                    indicadores[i].className = "w-2.5 h-2.5 rounded-full bg-white/80 hover:bg-white transition-all cursor-pointer shadow-sm";
+                }
+            }
+        }
+
+        function moverCarrossel(direcao) {
+            const track = document.getElementById('carrossel-track');
+            if (!track) return;
+            
+            const totalSlides = track.children.length;
+            slideAtual += direcao;
+            
+            if (slideAtual >= totalSlides) slideAtual = 0;
+            if (slideAtual < 0) slideAtual = totalSlides - 1;
+            
+            atualizarCarrossel();
+        }
+
+        function irParaSlide(index) {
+            slideAtual = index;
+            atualizarCarrossel();
+        }
+
+        // Timer para transição automática do carrossel
+        setInterval(() => {
+            moverCarrossel(1);
+        }, 5000);
+
+        // Lógica do Modal de Imagem Expandida
+        function expandirImagem(imgElement) {
+            const modal = document.getElementById('modalImagem');
+            const imagemExpandida = document.getElementById('imagemExpandida');
+            if(modal && imagemExpandida) {
+                imagemExpandida.src = imgElement.src;
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function fecharImagem() {
+            const modal = document.getElementById('modalImagem');
+            if(modal) {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
